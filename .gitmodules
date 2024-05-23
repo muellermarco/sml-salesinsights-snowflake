@@ -1,0 +1,3 @@
+[submodule "sml-salesinsights-common"]
+	path = sml-salesinsights-common
+	url = git@github.com:muellermarco/sml-salesinsights-common.git
