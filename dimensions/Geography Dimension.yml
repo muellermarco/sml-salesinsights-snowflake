@@ -86,17 +86,6 @@ level_attributes:
       - postalcode
     name_column: countrypostalcode
 relationships:
-  - unique_name: GeographyDimension_RowLevelSecuritybyRegion
-    from:
-      dataset: dim_geo_country
-      hierarchy: Geography City
-      join_columns:
-        - country
-      level: CountryCity
-    to:
-      dimension: Row Level Security by Region
-      level: Row Level Security by Region_user_id
-    type: embedded
   - from:
       dataset: dim_geo_city
       join_columns:
