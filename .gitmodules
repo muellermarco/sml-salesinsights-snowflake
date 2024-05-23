@@ -1,4 +1,3 @@
 [submodule "sml-salesinsights-common"]
 	path = sml-salesinsights-common
-	branch=main
 	url = https://github.com/muellermarco/sml-salesinsights-common.git
