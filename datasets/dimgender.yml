@@ -1,13 +1,12 @@
 unique_name: dimgender
-label: dimgender
 object_type: dataset
-connection_id: Snowflake
-table: dimgender
-project_properties:
-  allow_aggregates: true
-
+label: dimgender
 columns:
   - name: genderkey
     data_type: string
   - name: gendername
     data_type: string
+connection_id: Snowflake
+project_properties:
+  allow_aggregates: true
+table: DIMGENDER
