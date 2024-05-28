@@ -45,7 +45,7 @@ columns:
     parent_column: product_info
   - name: weight
     data_type: decimal
-    parent_column: product_info#
+    parent_column: product_info
   - name: Calculated Tax
     data_type: double
     sql: '"salesamount"*0.085'
