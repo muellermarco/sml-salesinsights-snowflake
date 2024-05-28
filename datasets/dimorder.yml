@@ -1,16 +1,11 @@
 unique_name: dimorder
-label: dimorder
 object_type: dataset
-connection_id: Snowflake
-table: dimorder
-project_properties:
-  allow_aggregates: true
-
+label: dimorder
 columns:
   - name: currency_name
     data_type: string
   - name: currencykey
-    data_type: long
+    data_type: decimal(38,0)
   - name: linename
     data_type: string
   - name: ordername
@@ -18,8 +13,12 @@ columns:
   - name: ordernumberlinekey
     data_type: string
   - name: salesorderlinenumber
-    data_type: long
+    data_type: decimal(38,0)
   - name: salesordernumber
     data_type: string
   - name: type
     data_type: string
+connection_id: Snowflake
+project_properties:
+  allow_aggregates: true
+table: DIMORDER
