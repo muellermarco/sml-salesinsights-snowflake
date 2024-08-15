@@ -3,4 +3,4 @@ packages:
  - name: Common-Objects
    url: https://github.com/muellermarco/sml-salesinsights-common.git
    branch: main
-   version: commit:69da4d288767926d72f1e61c24c120dd4be89b14
+   version: commit:06445b13dc4c6b5d60dee262a7fc1b97e6aaef9a
