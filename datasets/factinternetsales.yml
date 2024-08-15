@@ -49,7 +49,7 @@ columns:
   - name: Calculated Tax
     data_type: double
     sql: '"salesamount"*0.085'
-connection_id: Snowflake
+connection_id: common_connection
 model_properties:
   - create_hinted_aggregate: false
     model: Internet Sales
