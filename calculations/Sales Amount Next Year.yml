@@ -1,0 +1,16 @@
+unique_name: Sales Amount Next Year
+object_type: metric_calc
+label: Sales Amount Next Year
+expression: |-
+  CASE WHEN ISEMPTY([Measures].[salesamount1]) THEN NULL 
+
+    ELSE 
+
+    Aggregate(PeriodsToDate([Order Date Dimension].[Order Retail445].[Order
+    rpt_Year], [Order Date Dimension].[Order Retail445].CurrentMember),
+    [Measures].[salesamount1]) 
+
+    END
+format: standard
+is_hidden: false
+mdx_aggregate_function: SUM
