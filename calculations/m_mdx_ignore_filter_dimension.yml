@@ -1,0 +1,8 @@
+unique_name: m_mdx_ignore_filter_dimension
+object_type: metric_calc
+label: MDX Ignore Filter Dimension
+expression: >-
+  ([measures].[salesamount1], [Order Date Dimension].[Order Date Month
+  Hierarchy].[All])
+format: '0'
+is_hidden: false

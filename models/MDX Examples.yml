@@ -1,0 +1,25 @@
+unique_name: MDX Examples
+object_type: model
+label: MDX Examples
+metrics:
+  - unique_name: m_mdx_ignore_filter_dimension
+  - unique_name: salesamount1
+relationships:
+  - unique_name: factinternetsales_orderdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales2_shipdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
