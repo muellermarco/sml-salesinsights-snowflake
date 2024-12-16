@@ -1,0 +1,7 @@
+unique_name: m_order_unitprice_avg
+object_type: metric
+label: Order Unit Price
+calculation_method: average
+column: unitprice
+dataset: factinternetsales
+unrelated_dimensions_handling: repeat

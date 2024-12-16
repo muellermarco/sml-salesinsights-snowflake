@@ -1,0 +1,7 @@
+unique_name: MDX AVG unrelated measures
+object_type: metric_calc
+label: MDX AVG unrelated measures
+expression: '[measures].[m_order_salesamount_sum] / [measures].[m_order_unitprice_avg]'
+format: percent
+is_hidden: false
+mdx_aggregate_function: AVG

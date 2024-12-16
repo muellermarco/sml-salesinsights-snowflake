@@ -3,7 +3,10 @@ object_type: model
 label: MDX Examples
 metrics:
   - unique_name: m_mdx_ignore_filter_dimension
-  - unique_name: salesamount1
+  - unique_name: m_ship_salesamount_sum
+  - unique_name: m_order_salesamount_sum
+  - unique_name: m_order_unitprice_avg
+  - unique_name: MDX AVG unrelated measures
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_DayMonth
     from:
@@ -20,6 +23,23 @@ relationships:
       join_columns:
         - shipdatekey
     role_play: Ship {0}
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales2_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
+  - unique_name: factinternetsales2_orderdatekey_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - orderdatekey
+    role_play: Embark {0}
     to:
       dimension: Date Dimension
       level: DayMonth

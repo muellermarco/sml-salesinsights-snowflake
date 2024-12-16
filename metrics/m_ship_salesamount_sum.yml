@@ -1,0 +1,7 @@
+unique_name: m_ship_salesamount_sum
+object_type: metric
+label: Ship Sales Amount
+calculation_method: sum
+column: salesamount
+dataset: factinternetsales2
+unrelated_dimensions_handling: repeat
