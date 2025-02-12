@@ -1,0 +1,46 @@
+unique_name: RetailSecurityOnMeasures
+object_type: model
+label: RetailSecurityOnMeasures
+metrics:
+  - unique_name: m_factinternetsales_salesamount_sum
+  - unique_name: m_factinternetsales2_orderquantity_sum
+relationships:
+  - unique_name: factinternetsales2_orderdate_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - orderdate
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales_orderdate_to_Date Dimension_DayMonth
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdate
+    to:
+      dimension: Date Dimension
+      level: DayMonth
+  - unique_name: factinternetsales_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
+  - unique_name: factinternetsales2_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
+  - unique_name: factinternetsales2_productline_to_d_security_productline
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - productline
+    to:
+      row_security: d_security_productline

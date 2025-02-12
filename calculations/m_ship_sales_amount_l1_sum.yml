@@ -1,0 +1,9 @@
+unique_name: m_ship_sales_amount_l1_sum
+object_type: metric_calc
+label: Ship Sales Amount Level > 1
+expression: >-
+  IIF([Product Dimension].[Product Dimension
+  hierarchy].CurrentMember.LEVEL_NUMBER >1, [Measures].[m_ship_salesamount_sum]
+  ,null)
+format: fixed
+is_hidden: false
