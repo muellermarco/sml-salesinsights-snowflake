@@ -44,3 +44,19 @@ relationships:
         - productline
     to:
       row_security: d_security_productline
+  - unique_name: factinternetsales2_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name
+  - unique_name: factinternetsales_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name
