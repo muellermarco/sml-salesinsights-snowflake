@@ -4,3 +4,4 @@ label: Order Quantity
 calculation_method: sum
 column: orderquantity
 dataset: factinternetsales2
+unrelated_dimensions_handling: repeat

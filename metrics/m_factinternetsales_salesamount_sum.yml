@@ -4,3 +4,4 @@ label: Sales Amount
 calculation_method: sum
 column: salesamount
 dataset: factinternetsales
+unrelated_dimensions_handling: repeat

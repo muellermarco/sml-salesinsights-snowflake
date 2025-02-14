@@ -10,4 +10,4 @@ connection_id: common_connection
 sql: |-
   select
   'R' as productline,
-  'marco' as user_id
+  'marco.muller@atscale-se-demo.com' as user_id
