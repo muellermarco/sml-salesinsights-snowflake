@@ -8,10 +8,10 @@ aggregates:
     attributes:
       - name: Customer Name
         dimension: Customer Dimension
+    caching: engine-memory
     metrics:
       - orderquantity1
     target_connection: common_connection
-    caching: engine-memory
 dimensions:
   - Color Dimension
   - Size Dimension
@@ -47,7 +47,6 @@ drillthroughs:
       - orderquantity1
       - salesamount1
 include_default_drillthrough: true
-
 metrics:
   - unique_name: calculatedtax1
     folder: Sales Metrics
