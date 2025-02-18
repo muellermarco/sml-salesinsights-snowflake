@@ -1,6 +1,6 @@
 unique_name: Internet Sales
 object_type: model
-label: Internet Sales - Commit Tes
+label: Internet Sales - Commit Local
 
 aggregates:
   - unique_name: udf_customer_quantity
