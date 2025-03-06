@@ -60,3 +60,6 @@ relationships:
     to:
       dimension: Product Dimension
       level: Product Name
+dataset_properties:
+  security_productline:
+    create_hinted_aggregate: true

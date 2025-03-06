@@ -1,0 +1,6 @@
+unique_name: m_factinternetsales2_salesordernumber_max
+object_type: metric
+label: Sales Order Number
+calculation_method: maximum
+column: salesordernumber
+dataset: factinternetsales2

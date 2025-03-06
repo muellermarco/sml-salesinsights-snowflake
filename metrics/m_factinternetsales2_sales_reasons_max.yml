@@ -1,0 +1,6 @@
+unique_name: m_factinternetsales2_sales_reasons_max
+object_type: metric
+label: Sales Reasons
+calculation_method: maximum
+column: sales_reasons
+dataset: factinternetsales2
