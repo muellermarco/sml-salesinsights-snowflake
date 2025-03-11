@@ -61,5 +61,5 @@ relationships:
       dimension: Product Dimension
       level: Product Name
 dataset_properties:
-  security_productline:
+  factinternetsales2:
     create_hinted_aggregate: true
