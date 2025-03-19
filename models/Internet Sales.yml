@@ -1,7 +1,6 @@
 unique_name: Internet Sales
 object_type: model
-label: Internet Sales - Commit Local
-
+label: Internet Sales
 aggregates:
   - unique_name: udf_customer_quantity
     label: Customer Quanity
@@ -394,7 +393,7 @@ relationships:
     role_play: Order {0}
     to:
       dimension: Date Dimension
-      level: rpt_Day
+      level: Reporting_Day
   - unique_name: factinternetsales_Date_Dimension_Ship_1
     from:
       dataset: factinternetsales
@@ -403,7 +402,7 @@ relationships:
     role_play: Ship {0}
     to:
       dimension: Date Dimension
-      level: rpt_Day
+      level: Reporting_Day
   - unique_name: factinternetsales_Customer_Dimension
     from:
       dataset: factinternetsales
