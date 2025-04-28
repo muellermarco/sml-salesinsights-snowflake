@@ -1,6 +1,6 @@
 unique_name: Internet Sales
 object_type: model
-label: Internet Sales
+label: Internet Sales2
 aggregates:
   - unique_name: udf_customer_quantity
     label: Customer Quanity
