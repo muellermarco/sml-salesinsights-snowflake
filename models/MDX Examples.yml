@@ -9,7 +9,8 @@ metrics:
   - unique_name: m_order_unitprice_avg
   - unique_name: MDX AVG unrelated measures
   - unique_name: m_ship_sales_amount_l1_sum
-  - unique_name: m_ship_sales_amount_l2_sum  
+  - unique_name: m_ship_sales_amount_l2_sum
+  - unique_name: MDX Name Reference
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_DayMonth
     from:

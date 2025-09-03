@@ -1,0 +1,6 @@
+unique_name: MDX Name Reference
+object_type: metric_calc
+label: MDX Name Reference
+expression: >-
+  ([Geography Dimension].[Geography City].[CountryCity].[Germany],
+  [Measures].[m_order_salesamount_sum])
