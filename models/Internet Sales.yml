@@ -7,7 +7,7 @@ aggregates:
     attributes:
       - name: Customer Name
         dimension: Customer Dimension
-    caching: engine-memory
+    caching_disabled: engine-memory
     metrics:
       - orderquantity1
     target_connection: common_connection
