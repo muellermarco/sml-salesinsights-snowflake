@@ -2,12 +2,7 @@ unique_name: Sales
 object_type: model
 label: Sales
 aggregates: []
-dimensions:
-  - Color Dimension
-  - Size Dimension
-  - Style Dimension
-  - Weight Dimension
-
+dimensions: []
 metrics:
   - unique_name: calculatedtax1
     folder: Sales Metrics
@@ -299,7 +294,6 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
-
 relationships:
   - unique_name: factinternetsales_Date_Dimension_Order
     from:
