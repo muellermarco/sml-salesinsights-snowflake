@@ -2,8 +2,7 @@ unique_name: m_ship_sales_amount_l2_sum
 object_type: metric_calc
 label: Ship Sales Amount Level > 2
 expression: >-
-  IIF([Product Dimension].[Product Dimension
-  hierarchy].CurrentMember.LEVEL_NUMBER >2, [Measures].[m_ship_salesamount_sum]
+  IIF([Product Dimension].[Product Hierarchy].CurrentMember.LEVEL_NUMBER >2, [Measures].[m_ship_salesamount_sum]
   ,null)
 format: fixed
 is_hidden: false
