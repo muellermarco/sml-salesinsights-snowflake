@@ -294,6 +294,7 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
+  - unique_name: Country Benchmark
 relationships:
   - unique_name: factinternetsales_Date_Dimension_Order
     from:

@@ -1,0 +1,8 @@
+unique_name: Country Benchmark
+object_type: metric_calc
+label: Country Benchmark
+expression: >-
+  (ALLMEMBER([Measures].[salesamount1]) - ([Geography Dimension].[Geography
+  City].CurrentMember, [Measures].[salesamount1])) /
+
+  (ALLMEMBER([Measures].[Salesterritory Key Count]) - 1)
