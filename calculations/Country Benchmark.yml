@@ -5,4 +5,4 @@ expression: >-
   (ALLMEMBER([Measures].[salesamount1]) - ([Geography Dimension].[Geography
   City].CurrentMember, [Measures].[salesamount1])) /
 
-  (ALLMEMBER([Measures].[Salesterritory Key Count]) - 1)
+  (ALLMEMBER([Measures].[Country Count]) - 1)
