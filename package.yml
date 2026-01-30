@@ -1,6 +1,6 @@
 version: 1
 packages:
-  - version: commit:e85d924e006328863a9e18f1976146fa86f043ce
+  - version: commit:e973878a1a299169cd8ade0367da64ad175220a1
     name: Common-Objects
     url: https://github.com/muellermarco/sml-salesinsights-common.git
     branch: snowflake
