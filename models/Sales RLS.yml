@@ -1,13 +1,8 @@
-unique_name: Inventory
+unique_name: Sales RLS
 object_type: model
-label: Inventory
+label: Sales RLS
 aggregates: []
-dimensions:
-  - Color Dimension
-  - Size Dimension
-  - Style Dimension
-  - Weight Dimension
-
+dimensions: []
 metrics:
   - unique_name: calculatedtax1
     folder: Sales Metrics
@@ -318,13 +313,23 @@ relationships:
     to:
       dimension: Date Dimension
       level: customday
+  - unique_name: factinternetsales_Order_Dimension
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - salesorderlinenumber
+        - salesordernumber
+        - currencykey
+    to:
+      dimension: Order Dimension
+      level: order_line_item
   - unique_name: factinternetsales_Product_Dimension
     from:
       dataset: factinternetsales
       join_columns:
         - productkey
     to:
-      dimension: Product Dimension
+      dimension: Product Dimension Security
       level: Product Name
   - unique_name: factinternetsales_Date_Dimension_Order_1
     from:
@@ -344,6 +349,14 @@ relationships:
     to:
       dimension: Date Dimension
       level: rpt_Day
+  - unique_name: factinternetsales_Customer_Dimension
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension Security
+      level: Customer Name
   - unique_name: factinternetsales_Date_Dimension_Order_2
     from:
       dataset: factinternetsales

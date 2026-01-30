@@ -1,4 +1,4 @@
-unique_name: common_connection
+unique_name: Snowflake
 object_type: connection
 as_connection: Snowflake Partner
 label: Snowflake

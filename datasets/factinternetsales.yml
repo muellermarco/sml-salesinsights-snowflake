@@ -49,7 +49,7 @@ columns:
   - name: Calculated Tax
     data_type: double
     sql: '"salesamount"*0.085'
-connection_id: common_connection
+connection_id: Snowflake
 project_properties:
   aggregate_locality: managed
   allow_aggregates: true

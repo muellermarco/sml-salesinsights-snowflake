@@ -37,13 +37,6 @@ relationships:
     to:
       dimension: Customer Dimension
       level: Customer Name
-  - unique_name: factinternetsales2_productline_to_d_security_productline
-    from:
-      dataset: factinternetsales2
-      join_columns:
-        - productline
-    to:
-      row_security: d_security_productline
   - unique_name: factinternetsales2_productkey_to_Product Dimension_Product Name
     from:
       dataset: factinternetsales2
@@ -60,3 +53,10 @@ relationships:
     to:
       dimension: Product Dimension
       level: Product Name
+  - unique_name: factinternetsales2_productline_to_SECURITY_PRODUCTLINE_GROUP
+    from:
+      dataset: factinternetsales2
+      join_columns:
+        - productline
+    to:
+      row_security: SECURITY_PRODUCTLINE_GROUP
