@@ -377,6 +377,6 @@ relationships:
       dimension: Date Dimension
       level: DayMonth
 visible: true
-datset_properties:
+dataset_properties:
   dimorder:
     create_hinted_aggregate: true
