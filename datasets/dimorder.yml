@@ -18,7 +18,7 @@ columns:
     data_type: string
   - name: type
     data_type: string
-connection_id: common_connection
+connection_id: Snowflake
 project_properties:
   allow_aggregates: true
-table: DIMORDER
+sql: select * from se_demo_library.as_adventure.dimorder
