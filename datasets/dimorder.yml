@@ -22,4 +22,4 @@ connection_id: Snowflake
 project_properties:
   allow_aggregates: true
 sql: select * from se_demo_library.as_adventure.dimorder
-create-hinted-aggregate: true
+create_hinted_aggregate: true
