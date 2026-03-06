@@ -51,6 +51,3 @@ level_attributes:
       - salesorderlinenumber
       - salesordernumber
       - currencykey
-dataset_properties:
-  dimorder:
-    create_hinted_aggregate: true
