@@ -4,9 +4,7 @@ label: Sales Insights - Snowflake
 version: 1.3
 aggressive_agg_promotion: false
 build_speculative_aggs: false
+create_hinted_aggregate: true
 #aggregate_store:
 #    as_connection: preferredstore
 #    row_count_limit: 10000000
-dataset_properties:
-  dimorder:
-    create_hinted_aggregate: true

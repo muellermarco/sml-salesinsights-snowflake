@@ -379,4 +379,14 @@ relationships:
     to:
       dimension: Date Dimension
       level: DayMonth
+  - unique_name: dimorder_ordernumberlinekey_to_Order Dimension_order_line_item
+    from:
+      dataset: dimorder
+      join_columns:
+        - salesorderlinenumber
+        - salesordernumber
+        - currencykey
+    to:
+      dimension: Order Dimension
+      level: order_line_item
 visible: true
