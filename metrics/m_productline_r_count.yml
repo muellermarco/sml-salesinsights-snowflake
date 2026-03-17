@@ -1,0 +1,7 @@
+unique_name: m_productline_r_count
+object_type: metric
+label: Product Line R Count
+calculation_method: count non-null
+column: PRODUCT_LINE_S_COUNT
+dataset: factinternetsales
+unrelated_dimensions_handling: repeat

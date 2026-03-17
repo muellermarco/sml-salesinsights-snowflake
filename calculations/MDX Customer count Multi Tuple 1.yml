@@ -1,0 +1,9 @@
+unique_name: MDX Customer count Multi Tuple 1
+object_type: metric_calc
+label: MDX Customer count Multi Tuple 1
+expression: |-
+  (
+        [Customer Dimension].[Occupation].[Occupation].&[Professional], 
+        [Product Dimension].[Product Hierarchy].[Product Line].&[S ],
+        [Measures].[customercount1]
+  )

@@ -1,0 +1,17 @@
+unique_name: MDX Customer count Multi Tuple
+object_type: metric_calc
+label: MDX Customer count Multi Tuple
+expression: |-
+  ALLMEMBEREXCEPT(
+      (
+          [Customer Dimension].[Occupation].[Occupation].&[Professional], 
+          [Product Dimension].[Product Hierarchy].[Product Line].&[S ],
+          [Measures].[m_productline_r_count]
+      )
+  ,
+      {
+          [Order Date Dimension].[Order Date Month Hierarchy],
+          [Product Dimension].[Product Hierarchy],
+          [Customer Dimension].[Occupation]
+      }
+  )

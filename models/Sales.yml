@@ -2,6 +2,9 @@ unique_name: Sales
 object_type: model
 label: Sales
 aggregates: []
+dataset_properties:
+  dimorder:
+    create_hinted_aggregate: true
 dimensions: []
 metrics:
   - unique_name: calculatedtax1
@@ -294,7 +297,7 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
-
+  - unique_name: m_productline_r_count
 relationships:
   - unique_name: factinternetsales_Date_Dimension_Order
     from:
@@ -377,6 +380,3 @@ relationships:
       dimension: Date Dimension
       level: DayMonth
 visible: true
-datset_properties:
-  dimorder:
-    create_hinted_aggregate: true
