@@ -2,7 +2,8 @@ unique_name: customercount1
 object_type: metric
 label: Customer Count
 calculation_method: count distinct
-format: general number
-dataset: factinternetsales
 column: customerkey
+dataset: factinternetsales
+format: general number
 type: measure
+unrelated_dimensions_handling: repeat

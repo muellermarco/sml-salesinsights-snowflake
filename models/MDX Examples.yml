@@ -10,7 +10,11 @@ metrics:
   - unique_name: MDX AVG unrelated measures
   - unique_name: m_ship_sales_amount_l1_sum
   - unique_name: m_ship_sales_amount_l2_sum
-
+  - unique_name: MDX Customer count Multi Tuple
+  - unique_name: customercount1
+  - unique_name: MDX Customer count Multi Tuple 1
+  - unique_name: MDX Customer count Multi Tuple 2
+  - unique_name: m_productline_r_count
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date Dimension_DayMonth
     from:
@@ -55,3 +59,22 @@ relationships:
     to:
       dimension: Product Dimension
       level: Product Name
+  - unique_name: factinternetsales_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
+  - unique_name: factinternetsales_productkey_to_Product Dimension_Product Name
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Product Name
+dataset_properties:
+  factinternetsales:
+    create_hinted_aggregate: true

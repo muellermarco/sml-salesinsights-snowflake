@@ -297,6 +297,7 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
+  - unique_name: m_productline_r_count
 relationships:
   - unique_name: factinternetsales_Date_Dimension_Order
     from:

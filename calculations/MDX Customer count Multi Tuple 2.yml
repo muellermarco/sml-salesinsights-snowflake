@@ -1,0 +1,9 @@
+unique_name: MDX Customer count Multi Tuple 2
+object_type: metric_calc
+label: MDX Customer count Multi Tuple 2
+expression: |-
+  ALLMEMBEREXCEPT([Measures].[MDX Customer count Multi Tuple 1],
+  {
+  [Order Date Dimension].[Order Date Month Hierarchy]
+  }
+  )

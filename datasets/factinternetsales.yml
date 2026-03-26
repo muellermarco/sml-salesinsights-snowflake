@@ -49,8 +49,18 @@ columns:
   - name: Calculated Tax
     data_type: double
     sql: '"salesamount"*0.085'
+  - name: PRODUCT_LINE_S_COUNT
+    data_type: decimal(38,0)
 connection_id: Snowflake
 project_properties:
   aggregate_locality: managed
   allow_aggregates: true
-table: FACTINTERNETSALES
+sql: |+
+  Select 
+      fact.*,
+      CASE WHEN prd."productline" = 'R ' then fact."productkey" else NULL END AS PRODUCT_LINE_S_COUNT
+  from 
+  se_demo_library.as_adventure.factinternetsales fact
+  join se_demo_library.as_adventure.dimproduct prd
+  on fact."productkey" = prd."productkey"
+
