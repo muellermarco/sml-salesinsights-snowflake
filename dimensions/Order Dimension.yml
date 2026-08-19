@@ -26,7 +26,7 @@ level_attributes:
       - currencykey
     name_column: currency_name
   - unique_name: order
-    label: Order Number
+    label: Order
     dataset: dimorder
     key_columns:
       - salesordernumber
