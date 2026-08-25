@@ -4,6 +4,6 @@ label: Sales Amount
 calculation_method: sum
 column: salesamount
 dataset: factinternetsales
-format: $#,##0.00
+format: $#,##0
 type: measure
 unrelated_dimensions_handling: repeat
