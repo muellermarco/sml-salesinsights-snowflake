@@ -7,4 +7,4 @@ build_speculative_aggs: false
 create_hinted_aggregate: true
 #aggregate_store:
 #    as_connection: preferredstore
-#    row_count_limit: 10000000
+#    row_count_limit: 500000
