@@ -1,6 +1,6 @@
 unique_name: Order Dimension
 object_type: dimension
-label: Order Dimension
+label: Order Dimension 2
 hierarchies:
   - unique_name: Order Dimension hierarchy
     label: Order Dimension
