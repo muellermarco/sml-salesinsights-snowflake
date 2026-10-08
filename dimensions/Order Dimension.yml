@@ -1,6 +1,6 @@
 unique_name: Order Dimension
 object_type: dimension
-label: Order Dimension 2
+label: Order Dimension
 hierarchies:
   - unique_name: Order Dimension hierarchy
     label: Order Dimension
@@ -9,7 +9,6 @@ hierarchies:
       - unique_name: currency
       - unique_name: order
       - unique_name: order_line_item
-        is_hidden: true
         secondary_attributes:
           - unique_name: typeorder
             label: Order Type
