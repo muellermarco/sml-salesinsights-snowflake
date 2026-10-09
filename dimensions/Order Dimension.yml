@@ -3,7 +3,7 @@ object_type: dimension
 label: Order Dimension
 description: >-
   Order Dimension dimension with hierarchies Order Dimension; levels sourced
-  from dimorder.
+  from dimorder...
 hierarchies:
   - unique_name: Order Dimension hierarchy
     label: Order Dimension
