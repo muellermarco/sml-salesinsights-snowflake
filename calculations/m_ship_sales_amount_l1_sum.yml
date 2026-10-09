@@ -1,6 +1,7 @@
 unique_name: m_ship_sales_amount_l1_sum
 object_type: metric_calc
 label: Ship Sales Amount Level > 1
+description: "Ship Sales Amount shown only below level 1 of the Product Hierarchy (empty at higher levels)."
 expression: >-
   IIF([Product Dimension].[Product Hierarchy].CurrentMember.LEVEL_NUMBER >1, [Measures].[m_ship_salesamount_sum]
   ,null)

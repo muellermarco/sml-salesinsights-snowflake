@@ -1,6 +1,7 @@
 unique_name: MinOrderDate
 object_type: metric
 label: MinOrderDate
+description: "Minimum of factinternetsales.orderdatekey."
 calculation_method: minimum
 dataset: factinternetsales
 column: orderdatekey

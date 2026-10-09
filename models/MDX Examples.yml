@@ -1,6 +1,7 @@
 unique_name: MDX Examples
 object_type: model
 label: MDX Examples
+description: "MDX Examples model with 12 metrics; fact datasets: factinternetsales, factinternetsales2; dimensions: Customer Dimension, Date Dimension, Product Dimension."
 dimensions: []
 metrics:
   - unique_name: m_mdx_ignore_filter_dimension

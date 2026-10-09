@@ -1,6 +1,7 @@
 unique_name: factinternetsales2
 object_type: dataset
 label: factinternetsales2
+description: "SQL dataset (20 columns) on connection common_connection: select fact.* , prd.\"productline\" from SE_DEMO_LIBRARY.AS_ADVENTURE.FACTINTERNETSALES fact join SE_DEMO_LIBRARY.AS_ADVE…"
 columns:
   - name: currencykey
     data_type: decimal(38,0)

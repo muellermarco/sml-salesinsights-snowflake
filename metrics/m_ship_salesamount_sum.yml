@@ -1,6 +1,7 @@
 unique_name: m_ship_salesamount_sum
 object_type: metric
 label: Ship Sales Amount
+description: "Sum of factinternetsales2.salesamount; repeated across unrelated dimensions."
 calculation_method: sum
 column: salesamount
 dataset: factinternetsales2

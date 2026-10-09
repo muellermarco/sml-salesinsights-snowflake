@@ -1,5 +1,6 @@
 unique_name: Available Stock
 object_type: metric_calc
 label: Available Stock
+description: "Stockbalance minus Order Quantity."
 expression: '[Measures].[Stockbalance] - [Measures].[orderquantity1]'
 format: general number
