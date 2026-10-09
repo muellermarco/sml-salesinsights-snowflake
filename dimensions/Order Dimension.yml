@@ -1,21 +1,26 @@
 unique_name: Order Dimension
 object_type: dimension
 label: Order Dimension
-description: "Order Dimension dimension with hierarchies Order Dimension; levels sourced from dimorder."
+description: >-
+  Order Dimension dimension with hierarchies Order Dimension; levels sourced
+  from dimorder.
 hierarchies:
   - unique_name: Order Dimension hierarchy
     label: Order Dimension
-    description: "Order Dimension hierarchy of the Order Dimension dimension: Currency › Order › Order Line Item."
+    description: >-
+      Order Dimension hierarchy of the Order Dimension dimension: Currency ›
+      Order › Order Line Item.
     folder: Orders
     levels:
       - unique_name: currency
       - unique_name: order
       - unique_name: order_line_item
-        is_hidden: true
         secondary_attributes:
           - unique_name: typeorder
             label: Order Type
-            description: "Order Type: attribute of the Order Line Item level in the Order Dimension dimension, from dimorder.type."
+            description: >-
+              Order Type: attribute of the Order Line Item level in the Order
+              Dimension dimension, from dimorder.type.
             dataset: dimorder
             folder: Orders
             key_columns:
@@ -25,14 +30,19 @@ hierarchies:
 level_attributes:
   - unique_name: currency
     label: Currency
-    description: "Currency level of the Order Dimension dimension in the Order Dimension hierarchy, from dimorder.currency_name (key: currencykey)."
+    description: >-
+      Currency level of the Order Dimension dimension in the Order Dimension
+      hierarchy, from dimorder.currency_name (key: currencykey).
     dataset: dimorder
     key_columns:
       - currencykey
     name_column: currency_name
   - unique_name: order
     label: Order
-    description: "Order level of the Order Dimension dimension in the Order Dimension hierarchy, from dimorder.salesordernumber (key: salesordernumber, currencykey)."
+    description: >-
+      Order level of the Order Dimension dimension in the Order Dimension
+      hierarchy, from dimorder.salesordernumber (key: salesordernumber,
+      currencykey).
     dataset: dimorder
     key_columns:
       - salesordernumber
