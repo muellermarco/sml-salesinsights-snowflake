@@ -1,6 +1,7 @@
 unique_name: m_order_salesamount_sum
 object_type: metric
 label: Order Sales Amount
+description: "Sum of factinternetsales.salesamount; repeated across unrelated dimensions."
 calculation_method: sum
 column: salesamount
 dataset: factinternetsales

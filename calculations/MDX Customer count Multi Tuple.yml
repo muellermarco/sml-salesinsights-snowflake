@@ -1,6 +1,7 @@
 unique_name: MDX Customer count Multi Tuple
 object_type: metric_calc
 label: MDX Customer count Multi Tuple
+description: "Product Line R Count evaluated with the listed dimensions removed from the current filter context (ALLMEMBEREXCEPT) — MDX example."
 expression: |-
   ALLMEMBEREXCEPT(
       (

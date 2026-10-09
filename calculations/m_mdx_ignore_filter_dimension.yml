@@ -1,6 +1,7 @@
 unique_name: m_mdx_ignore_filter_dimension
 object_type: metric_calc
 label: MDX Ignore Filter Dimension
+description: "Order Sales Amount ignoring the filter on the dimension fixed to its All member — MDX example."
 expression: >-
   ([measures].[m_order_salesamount_sum], [Ship Date Dimension].[Ship Date Month
   Hierarchy].[All])

@@ -1,6 +1,7 @@
 unique_name: MDX Customer count Multi Tuple 2
 object_type: metric_calc
 label: MDX Customer count Multi Tuple 2
+description: "MDX Customer count Multi Tuple 1 evaluated with the listed dimensions removed from the current filter context (ALLMEMBEREXCEPT) — MDX example."
 expression: |-
   ALLMEMBEREXCEPT([Measures].[MDX Customer count Multi Tuple 1],
   {

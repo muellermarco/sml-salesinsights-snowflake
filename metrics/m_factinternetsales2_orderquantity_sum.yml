@@ -1,6 +1,7 @@
 unique_name: m_factinternetsales2_orderquantity_sum
 object_type: metric
 label: Order Quantity
+description: "Sum of factinternetsales2.orderquantity; repeated across unrelated dimensions."
 calculation_method: sum
 column: orderquantity
 dataset: factinternetsales2

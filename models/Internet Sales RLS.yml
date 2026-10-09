@@ -1,6 +1,7 @@
 unique_name: Internet Sales RLS
 object_type: composite_model
 label: Internet Sales RLS
+description: "Composite model combining Sales RLS, Inventory RLS."
 metrics:
   - unique_name: Available Stock
     folder: Stock

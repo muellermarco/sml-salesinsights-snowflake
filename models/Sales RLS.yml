@@ -1,6 +1,7 @@
 unique_name: Sales RLS
 object_type: model
 label: Sales RLS
+description: "Sales RLS model with 145 metrics in folders Customer Metrics, Product Metrics, Sales Metrics, Time Relative; fact datasets: factinternetsales; dimensions: Customer Dimension Security, Date Dimension, Order Dimension, Product Dimension Security."
 aggregates: []
 dimensions: []
 metrics:

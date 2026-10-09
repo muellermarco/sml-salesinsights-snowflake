@@ -1,6 +1,7 @@
 unique_name: Internet Sales
 object_type: composite_model
 label: Internet Sales
+description: "Composite model combining Sales, Inventory."
 models:
   - Sales
   - Inventory

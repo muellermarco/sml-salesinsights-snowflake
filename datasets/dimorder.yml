@@ -1,6 +1,7 @@
 unique_name: dimorder
 object_type: dataset
 label: dimorder
+description: "SQL dataset (8 columns) on connection Snowflake: select * from se_demo_library.as_adventure.dimorder"
 columns:
   - name: currency_name
     data_type: string

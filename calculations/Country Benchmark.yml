@@ -1,6 +1,7 @@
 unique_name: Country Benchmark
 object_type: metric_calc
 label: Country Benchmark
+description: "Benchmark: Sales Amount and Country Count across all members minus the current member's value — how far the current member is below the overall total."
 expression: >-
   (ALLMEMBER([Measures].[salesamount1]) - ([Geography Dimension].[Geography
   City].CurrentMember, [Measures].[salesamount1])) /

@@ -1,6 +1,7 @@
 unique_name: RetailSecurityOnMeasures
 object_type: model
 label: RetailSecurityOnMeasures
+description: "RetailSecurityOnMeasures model with 2 metrics; fact datasets: factinternetsales, factinternetsales2; dimensions: Customer Dimension, Date Dimension, Product Dimension."
 metrics:
   - unique_name: m_factinternetsales_salesamount_sum
   - unique_name: m_factinternetsales2_orderquantity_sum

@@ -1,6 +1,7 @@
 unique_name: customercount1
 object_type: metric
 label: Customer Count
+description: "Count Distinct of factinternetsales.customerkey; formatted as general number; repeated across unrelated dimensions."
 calculation_method: count distinct
 column: customerkey
 dataset: factinternetsales
