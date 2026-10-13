@@ -4,13 +4,11 @@ label: Estimated Customer Count-Order CustomPP445-PrevYearGrowthPct
 description: >-
   Percent growth over Previous Period Sales with a custom lookback key.  Use
   with [Order CustomPP445]
-expression: >-
-  CASE WHEN ISEMPTY([Measures].[Estimated Customer Count-Order
-  CustomPP445-PrevYear]) THEN NULL 
-
-  ELSE [Measures].[Estimated Customer Count-Order CustomPP445-PrevYearGrowth] /
-  [Measures].[Estimated Customer Count-Order CustomPP445-PrevYear] 
-
+expression: |-
+  CASE
+    WHEN ISEMPTY([Measures].[Estimated Customer Count-Order CustomPP445-PrevYear]) THEN NULL
+    ELSE [Measures].[Estimated Customer Count-Order CustomPP445-PrevYearGrowth]
+           / [Measures].[Estimated Customer Count-Order CustomPP445-PrevYear]
   END
 format: percent
 is_hidden: false

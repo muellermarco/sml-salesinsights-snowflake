@@ -2,16 +2,13 @@ unique_name: Sales Amount-Order Retail445-Prev
 object_type: metric_calc
 label: Sales Amount-Order Retail445-Prev
 description: Order Reporting Hierarchy Previous Period Sales
-expression: >-
-  CASE WHEN ISEMPTY([Measures].[salesamount1]) 
-
-  THEN NULL
-
-  ELSE
-
-  ([Order Date Dimension].[Order Retail445].CurrentMember.PrevMember,
-  [Measures].[salesamount1])
-
+expression: |-
+  CASE
+    WHEN ISEMPTY([Measures].[salesamount1]) THEN NULL
+    ELSE (
+           [Order Date Dimension].[Order Retail445].CurrentMember.PrevMember,
+           [Measures].[salesamount1]
+         )
   END
 format: $#,##0.00
 is_hidden: false
