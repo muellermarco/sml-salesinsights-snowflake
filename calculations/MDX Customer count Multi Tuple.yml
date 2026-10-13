@@ -4,15 +4,14 @@ label: MDX Customer count Multi Tuple
 description: "Product Line R Count evaluated with the listed dimensions removed from the current filter context (ALLMEMBEREXCEPT) — MDX example."
 expression: |-
   ALLMEMBEREXCEPT(
-      (
-          [Customer Dimension].[Occupation].[Occupation].&[Professional], 
-          [Product Dimension].[Product Hierarchy].[Product Line].&[S ],
-          [Measures].[m_productline_r_count]
-      )
-  ,
-      {
-          [Order Date Dimension].[Order Date Month Hierarchy],
-          [Product Dimension].[Product Hierarchy],
-          [Customer Dimension].[Occupation]
-      }
+    (
+      [Customer Dimension].[Occupation].[Occupation].&[Professional],
+      [Product Dimension].[Product Hierarchy].[Product Line].&[S ],
+      [Measures].[m_productline_r_count]
+    ),
+    {
+      [Order Date Dimension].[Order Date Month Hierarchy],
+      [Product Dimension].[Product Hierarchy],
+      [Customer Dimension].[Occupation]
+    }
   )
