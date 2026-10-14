@@ -1,7 +1,11 @@
 unique_name: Sales RLS
 object_type: model
 label: Sales RLS
-description: "Sales RLS model with 145 metrics in folders Customer Metrics, Product Metrics, Sales Metrics, Time Relative; fact datasets: factinternetsales; dimensions: Customer Dimension Security, Date Dimension, Order Dimension, Product Dimension Security."
+description: >-
+  Sales RLS model with 145 metrics in folders Customer Metrics, Product Metrics,
+  Sales Metrics, Time Relative; fact datasets: factinternetsales; dimensions:
+  Customer Dimension Security, Date Dimension, Order Dimension, Product
+  Dimension Security.
 aggregates: []
 dimensions: []
 metrics:
@@ -376,4 +380,10 @@ relationships:
     to:
       dimension: Date Dimension
       level: DayMonth
+  - unique_name: SECURITY_COUNTRY_GROUP
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      row_security: SECURITY_COUNTRY_GROUP
 visible: true
