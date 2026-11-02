@@ -380,10 +380,4 @@ relationships:
     to:
       dimension: Date Dimension
       level: DayMonth
-  - unique_name: SECURITY_COUNTRY_GROUP
-    from:
-      dataset: ''
-      join_columns: []
-    to:
-      row_security: SECURITY_COUNTRY_GROUP
 visible: true
